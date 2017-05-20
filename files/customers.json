@@ -1,0 +1,28 @@
+{
+    "customer": [
+        {
+            "name": "Kaustav",
+            "userId": 3,
+            "latitude": 12.936310,
+            "longitude": 77.613526
+        },
+        {
+            "name": "Ankush",
+            "userId": 2,
+            "latitude": 12.34,
+            "longitude": 79
+        },
+        {
+            "name": "Abhilash",
+            "userId": 1,
+            "latitude": 12.939820,
+            "longitude": 77.605745
+        },
+        {
+            "name": "Sajid",
+            "userId": 4,
+            "latitude": 12.56,
+            "longitude": 99
+        }
+    ]
+}
