@@ -27,6 +27,12 @@ public class JsonParser {
 
 			String strJsonString = this.read(strFilePath);
 			
+			//error checking
+			if(strJsonString == null || strJsonString.equals("")){
+				System.out.println("Invalid input file.");
+				return null;
+			}
+			
 			JSONObject json = new JSONObject(strJsonString);
 			JSONArray jsonCustomerArr = json.getJSONArray("customer");
 			

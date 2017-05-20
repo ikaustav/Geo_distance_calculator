@@ -20,6 +20,12 @@ public class TestApp {
 		
 		List<Customer> customerList = calculatorObj.findCustomersInRange(parserObj.parse("files/customers.json"), Constants.DISTANCE_RANGE);
 		
+		//error checking
+		if(customerList == null || customerList.size() == 0){
+			System.out.println("No customer found");
+			return;
+		}
+		
 		Collections.sort(customerList, new Comparator<Customer>() {
 			@Override
 			public int compare(Customer cust1, Customer cust2) {
