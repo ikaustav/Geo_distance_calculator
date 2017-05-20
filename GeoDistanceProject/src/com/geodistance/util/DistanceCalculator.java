@@ -40,7 +40,7 @@ public class DistanceCalculator {
 		double dbCentralAngle = Math.acos(Math.sin(Math.toRadians(dbLat1)) * Math.sin(Math.toRadians(dbLat2)) + 
 				Math.cos(Math.toRadians(dbLat1)) * Math.cos(Math.toRadians(dbLat2)) * Math.cos(Math.toRadians(dbAbsDiff)));
 		
-        double dbDistance = 6371 * dbCentralAngle;
+        double dbDistance = Constants.EARTH_RADIUS * dbCentralAngle;
 
 		return dbDistance;
 	}

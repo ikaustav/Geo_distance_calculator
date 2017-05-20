@@ -8,5 +8,7 @@ public class Constants {
 	
 	/*Range used in customer serach*/
 	public static final long DISTANCE_RANGE = 100;
-	
+
+	/*Earth radius in km*/
+	public static final long EARTH_RADIUS = 6371;
 }
